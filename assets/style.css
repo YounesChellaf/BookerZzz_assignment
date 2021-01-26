@@ -1,0 +1,147 @@
+* {
+    font-family: 'Titillium Web';
+}
+
+.input-group,
+select {
+    margin: auto;
+}
+
+.card {
+    -webkit-box-shadow: 5px 5px 37px -1px rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 37px -1px rgba(0, 0, 0, 0.19);
+    margin: auto;
+    border: 0;
+}
+
+.expander-container {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .card {
+        transition: 0.3s;
+        width: 250px !important;
+        height: 225px !important;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+        transform: translate(55%, 20px);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .card-hover {
+        display: none;
+    }
+
+    .expander-container {
+        display: block;
+    }
+
+    .expander {
+        height: 25px;
+        width: 25px;
+        margin: auto;
+        background-color: white;
+        border-radius: 0 0 40% 40%;
+    }
+
+    .expander-content {
+        width: 0;
+        padding: 0 !important;
+        height: 0;
+        opacity: 0;
+        border-top: solid grey 1px;
+    }
+
+    .expanded-card {
+        transition: 0.3s;
+        height: 405px !important;
+    }
+
+    .expanded {
+        width: 250px;
+        padding-top: 30px !important;
+        display: block;
+        height: 180px !important;
+        opacity: 1;
+    }
+
+    .search-input-group {
+        width: 250px !important;
+    }
+
+    .sort-dropdown {
+        width: 250px !important;
+    }
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: 600px !important;
+        height: 250px !important;
+        text-align: left !important;
+    }
+
+    .card img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .card-body {
+        position: absolute;
+        margin-left: 50%;
+    }
+
+    .search-input-group {
+        width: 600px !important;
+    }
+
+    .sort-dropdown {
+        width: 600px !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .card {
+        width: 300px !important;
+        height: 275px !important;
+    }
+
+    .card img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .search-input-group {
+        width: 300px !important;
+    }
+
+    .sort-dropdown {
+        width: 300px !important;
+    }
+
+    .card-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 100px;
+        background: white;
+        opacity: 0;
+        font-weight: 600;
+        width: 300px !important;
+        height: 275px !important;
+    }
+
+    .card-hover:hover {
+        transition: 0.5s;
+        opacity: 0.77;
+        cursor: pointer;
+    }
+}
